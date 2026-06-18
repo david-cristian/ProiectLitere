@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainController" style="-fx-padding: 20;">
+
+    <VBox alignment="CENTER" spacing="20.0" HBox.hgrow="ALWAYS">
+        <Label text="Găsește Indiciul!" textFill="#2c3e50">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <HBox fx:id="tablaJoc" alignment="CENTER" spacing="10"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER" prefWidth="350.0" spacing="10.0">
+        <Label text="Clasament">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tabelClasament" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colAlias" text="Jucător" prefWidth="100.0" />
+                <TableColumn fx:id="colData" text="Data Inceperii" prefWidth="100.0" />
+                <TableColumn fx:id="colPuncte" text="Puncte" prefWidth="100.0" />
+            </columns>
+        </TableView>
+    </VBox>
+
+</HBox>
